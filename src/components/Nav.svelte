@@ -1,7 +1,14 @@
 <script>
   export let segment;
   import Fa from "svelte-fa";
-  import { faBars, faTimes, faHome } from "@fortawesome/free-solid-svg-icons";
+  import {
+    faBars,
+    faTimes,
+    faHome,
+    faUser,
+    faSuitcase,
+    faComment,
+  } from "@fortawesome/free-solid-svg-icons";
   let x = false;
   function handleMenu() {
     console.log("?");
@@ -40,7 +47,9 @@
     <div class="Nav-Menu">
       <ul>
         <li>
-          <div class="home">
+          <div
+            class="Menu-button {segment === undefined ? 'active' : undefined}"
+          >
             <i>
               <Fa icon={faHome} size="2x" />
             </i>
@@ -51,24 +60,40 @@
           </div>
         </li>
         <li>
-          <a
-            aria-current={segment === "about" ? "page" : undefined}
-            href="about">about</a
-          >
+          <div class="Menu-button {segment === 'about' ? 'active' : undefined}">
+            <i>
+              <Fa icon={faUser} size="2x" />
+            </i>
+            <a
+              aria-current={segment === "about" ? "page" : undefined}
+              href="about">about</a
+            >
+          </div>
         </li>
         <li>
-          <a aria-current={segment === "about" ? "page" : undefined} href="holi"
-            >about</a
-          >
+          <div class="Menu-button {segment === 'holi' ? 'active' : undefined}">
+            <i>
+              <Fa icon={faSuitcase} size="2x" />
+            </i>
+            <a
+              aria-current={segment === "holi" ? "page" : undefined}
+              href="holi">Holi</a
+            >
+          </div>
         </li>
         <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
 		     the blog data when we hover over the link or tap it on a touchscreen -->
         <li>
-          <a
-            rel="prefetch"
-            aria-current={segment === "blog" ? "page" : undefined}
-            href="blog">blog</a
-          >
+          <div class="Menu-button {segment === 'blog' ? 'active' : undefined}">
+            <i>
+              <Fa icon={faComment} size="2x" />
+            </i>
+            <a
+              rel="prefetch"
+              aria-current={segment === "blog" ? "page" : undefined}
+              href="blog">blog</a
+            >
+          </div>
         </li>
       </ul>
     </div>
@@ -76,6 +101,32 @@
 </nav>
 
 <style>
+  .Menu-button {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 45px;
+    margin: 15px;
+  }
+  .Menu-button:hover {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+    font-size: larger;
+    font-weight: 900;
+    margin: 15px;
+  }
+
+  .active {
+    height: 60px;
+    font-size: larger;
+    font-weight: 900;
+  }
+  .Menu-button a {
+    margin-left: 45px;
+  }
+
   ul {
     text-decoration: none;
     list-style: none;

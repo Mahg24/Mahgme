@@ -209,4 +209,9 @@
   .prueba {
     width: 20vw;
   }
+  @media (max-width: 1440px) {
+    .prueba {
+      width: 60vw;
+    }
+  }
 </style>
