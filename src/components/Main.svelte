@@ -23,6 +23,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 10vh;
+    color: #eeebdd;
   }
   /* .Main-container {
   }

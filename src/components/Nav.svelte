@@ -8,6 +8,7 @@
     faUser,
     faSuitcase,
     faComment,
+    faPaperPlane,
   } from "@fortawesome/free-solid-svg-icons";
   let x = false;
   function handleMenu() {
@@ -81,8 +82,20 @@
             >
           </div>
         </li>
-        <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
+        <!-- <li>
+          <div
+            class="Menu-button {segment === 'contact' ? 'active' : undefined}"
+          >
+            <i>
+              <Fa icon={faPaperPlane} size="2x" />
+            </i>
+            <a
+              aria-current={segment === "contact" ? "page" : undefined}
+              href="contact">contact</a
+            >
+          </div>
+        </li> -->
+
         <li>
           <div class="Menu-button {segment === 'blog' ? 'active' : undefined}">
             <i>
@@ -161,7 +174,7 @@
     display: flex;
     transition: transform 1s;
     background-color: #eeebdd;
-    height: 100vh;
+    height: 100%;
     max-width: 80vw;
     width: 20%;
     min-width: 50px;
