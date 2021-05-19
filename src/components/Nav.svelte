@@ -72,13 +72,15 @@
           </div>
         </li>
         <li>
-          <div class="Menu-button {segment === 'holi' ? 'active' : undefined}">
+          <div
+            class="Menu-button {segment === 'Projects' ? 'active' : undefined}"
+          >
             <i>
               <Fa icon={faSuitcase} size="2x" />
             </i>
             <a
-              aria-current={segment === "holi" ? "page" : undefined}
-              href="holi">Holi</a
+              aria-current={segment === "Projects" ? "page" : undefined}
+              href="projects">Projects</a
             >
           </div>
         </li>

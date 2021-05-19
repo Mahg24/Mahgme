@@ -47,6 +47,12 @@
       flex-direction: column;
       align-items: center;
     }
+    .About-Resume-text {
+      margin: 0px 14vw 0 14vw !important;
+    }
+    .About-Resume-Image img {
+      width: 90vw;
+    }
   }
 
   @media (max-width: 1440px) {
