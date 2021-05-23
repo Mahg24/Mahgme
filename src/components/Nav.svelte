@@ -12,7 +12,6 @@
   } from "@fortawesome/free-solid-svg-icons";
   let x = false;
   function handleMenu() {
-    console.log("?");
     let element = document.querySelector("#menu");
     if (
       element.classList.contains("hide") ||
@@ -73,13 +72,13 @@
         </li>
         <li>
           <div
-            class="Menu-button {segment === 'Projects' ? 'active' : undefined}"
+            class="Menu-button {segment === 'projects' ? 'active' : undefined}"
           >
             <i>
               <Fa icon={faSuitcase} size="2x" />
             </i>
             <a
-              aria-current={segment === "Projects" ? "page" : undefined}
+              aria-current={segment === "projects" ? "page" : undefined}
               href="projects">Projects</a
             >
           </div>
@@ -98,7 +97,7 @@
           </div>
         </li> -->
 
-        <li>
+        <!-- <li>
           <div class="Menu-button {segment === 'blog' ? 'active' : undefined}">
             <i>
               <Fa icon={faComment} size="2x" />
@@ -109,7 +108,7 @@
               href="blog">blog</a
             >
           </div>
-        </li>
+        </li> -->
       </ul>
     </div>
   </div>
@@ -214,6 +213,7 @@
       justify-content: center;
       margin: 5px;
       flex-direction: column;
+      z-index: 999999;
     }
     nav {
       width: 50vw;
