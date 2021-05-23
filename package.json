@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "mahgme",
+  "description": "Personal webpage for Miguel Holguin",
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
