@@ -18,13 +18,15 @@
         </div>
         <div class="Link-Project">
           <ul>
-            <li><a href={Github.url}>Github</a></li>
+            {#if !Github.private}
+              <li><a href={Github.url}>Github</a></li>
+            {/if}
             <li>{Role}</li>
           </ul>
         </div>
       </div>
       <div class="Redirection-project">
-        <a href={Url}>
+        <a target="_blank" href={Url}>
           <i>
             <Fa icon={faArrowCircleRight} size="3x" />
           </i></a
@@ -45,8 +47,9 @@
     background-position: 50%;
   }
   .Card-Project-container {
-    backdrop-filter: blur(2px);
-    height: 200px;
+    /* backdrop-filter: blur(2px); */
+    height: 100%;
+    width: 400px;
   }
   .Card-texts {
     height: 100%;
@@ -55,7 +58,7 @@
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
-    background: linear-gradient(45deg, #1b1717, transparent);
+    background: linear-gradient(45deg, #584f4f, transparent);
   }
   .Redirection-project {
     width: 20%;

@@ -13,11 +13,31 @@
   <div class="About-Resume">
     <div class="About-Resume-text">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad deleniti
-        quod facere illo veniam mollitia voluptatibus non laboriosam est,
-        accusamus exercitationem id totam similique quidem distinctio
-        necessitatibus beatae quae saepe!
+        My name is Miguel Holguin, i'm a backend developer and a passionate for
+        software, i enjoy everything about design, music, games and movies.
       </p>
+      <p>I study a lot on the internet and I learned this skills:</p>
+      <ul>
+        <li>Node js</li>
+        <li>Php</li>
+        <li>C#</li>
+        <li>Svelte</li>
+        <li>Adobe Xd</li>
+        <li>SQL and Mysql</li>
+        <li>Mongo DB</li>
+      </ul>
+      <p>
+        i like the <a href="https://platzi.com/">Platzi</a> slogan "Never stop learning"
+        and i live in that way, this are some of skills that I will study or i am
+        currently learning
+      </p>
+      <ul>
+        <li>Software architecture</li>
+        <li>DevOps</li>
+        <li>Laravel</li>
+        <li>Graph oriented database</li>
+        <li>Movile development</li>
+      </ul>
     </div>
     <div class="About-Resume-Image">
       <img
