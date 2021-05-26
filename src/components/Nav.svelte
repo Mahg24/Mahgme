@@ -83,7 +83,7 @@
             >
           </div>
         </li>
-        <!-- <li>
+        <li>
           <div
             class="Menu-button {segment === 'contact' ? 'active' : undefined}"
           >
@@ -95,7 +95,7 @@
               href="contact">contact</a
             >
           </div>
-        </li> -->
+        </li>
 
         <!-- <li>
           <div class="Menu-button {segment === 'blog' ? 'active' : undefined}">

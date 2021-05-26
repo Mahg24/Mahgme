@@ -16,7 +16,7 @@
         My name is Miguel Holguin, i'm a backend developer and a passionate for
         software, i enjoy everything about design, music, games and movies.
       </p>
-      <p>I study a lot on the internet and I learned this skills:</p>
+      <p>I study a lot on the internet and I have learned this skills:</p>
       <ul>
         <li>Node js</li>
         <li>Php</li>
@@ -27,7 +27,7 @@
         <li>Mongo DB</li>
       </ul>
       <p>
-        i like the <a href="https://platzi.com/">Platzi</a> slogan "Never stop learning"
+        i like <a href="https://platzi.com/">Platzi's</a> slogan "Never stop learning"
         and i live in that way, this are some of skills that I will study or i am
         currently learning
       </p>
@@ -36,7 +36,7 @@
         <li>DevOps</li>
         <li>Laravel</li>
         <li>Graph oriented database</li>
-        <li>Movile development</li>
+        <li>Mobile development</li>
       </ul>
     </div>
     <div class="About-Resume-Image">
