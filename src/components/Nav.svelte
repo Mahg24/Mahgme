@@ -213,7 +213,6 @@
       justify-content: center;
       margin: 5px;
       flex-direction: column;
-      z-index: 999999;
     }
     nav {
       width: 50vw;
